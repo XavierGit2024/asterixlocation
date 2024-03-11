@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("D:\Projet\images\lambo.jpeg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: black;
+    color: #ccc;
+}
+
+header {
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    background-color: black;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+    position: relative;
+    top: 100;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a:hover {
+    color: #ffd700; 
+    transition: color 0.3s ease;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+
+
+.gallerie {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); 
+    grid-gap: 50px; 
+}
+.product h2{
+    color: #fff;
+}
+.product {
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    text-align: center; 
+}
+.product img {
+    width: 100%; 
+    height: auto; 
+    transition: transform 0.3s; 
+    cursor: pointer; 
+}
+.product img:hover,
+.product img:active {
+    transform: scale(1.1);
+}
+
+.contact-form {
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px auto; 
+    max-width: 400px; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+}
+
+
+.contact-form label {
+    width: 100%;
+    
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color:yellowgreen;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.opening-hours {
+    font-size: large;
+    text-size-adjust: 100%;
+    text-align: center; 
+    margin: 0 auto; 
+    max-width: 600px; 
+}
+
+
+.faq-item p {
+    display: block;
+}
+
+.faq-item input[type="checkbox"] {
+    display: none;
+}
+
+.faq-item input[type="checkbox"]:checked + p {
+    display: block;
+}
+
+
+.faq-item h3 {
+    color: #ddd;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.faq-item p {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+#site {
+    text-align: center; 
+}
+#site video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1; 
+}
+
+#site ul {
+    list-style-type: none; 
+    padding: 0;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+    list-style: none;
+    margin: 0;
+}
+
+#site ul li {
+    display: block;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+#site ul li a {
+    
+    font-family: fantasy;
+    font-size: 40px; 
+    text-decoration: none; 
+    color: rgb(255, 255, 255); 
+}
+
+
+.partners h1{
+   
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.partners {
+   
+    font-size: x-large;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.partners img {
+    margin-top: 20px;
+    max-width: 150px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+
+footer {
+    background-color:rgb(106, 21, 21);
+    color: #fff;
+    padding: 20px;
+    text-align: right;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+#presentation {
+    font-size: larger;
+    text-align: center;
+    position: relative;
+    height: 100vh;
+}
+
+#presentation video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.presentation-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1; 
+}
+
+.presentation-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
